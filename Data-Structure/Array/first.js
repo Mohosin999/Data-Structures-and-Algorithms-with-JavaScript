@@ -58,3 +58,22 @@
 // const arr = [1, 3, 2, 4, 7, 6, 9, 10];
 // const result = arrayEvenAndOdd(arr);
 // console.log(result);
+
+/**
+ * Problem - 03
+ * Reversal algorithm for Array rotation
+ * Input:  arr[] = {1, 2, 3, 4, 5, 6, 7}, d = 2
+ * Output: 3, 4, 5, 6, 7, 1, 2
+ */
+
+function rotateArr(arr, d) {
+  for (let i = 0; i < d; i++) {
+    const store = arr.shift(i);
+    arr.push(store);
+  }
+  return arr;
+}
+
+const arr = [1, 2, 3, 4, 5, 6, 7];
+const result = rotateArr(arr, (d = 2));
+console.log(result);
