@@ -66,14 +66,37 @@
  * Output: 3, 4, 5, 6, 7, 1, 2
  */
 
-function rotateArr(arr, d) {
-  for (let i = 0; i < d; i++) {
+// function rotateArr(arr, d) {
+//   for (let i = 0; i < d; i++) {
+//     const store = arr.shift(i);
+//     arr.push(store);
+//   }
+//   return arr;
+// }
+
+// const arr = [1, 2, 3, 4, 5, 6, 7];
+// const result = rotateArr(arr, (d = 2));
+// console.log(result);
+
+/**
+ * Problem - 04
+ * Print left rotation of array in O(n) time and O(1) space
+ * Input :
+ * arr[] = {1, 3, 5, 7, 9}
+ * k1 = 14
+ * Output :
+ * 9 1 3 5 7
+ */
+function leftRotate(arr, k) {
+  const mod = k % arr.length;
+  for (let i = 0; i < k; i++) {
     const store = arr.shift(i);
     arr.push(store);
   }
   return arr;
 }
 
-const arr = [1, 2, 3, 4, 5, 6, 7];
-const result = rotateArr(arr, (d = 2));
+const arr = [1, 3, 5, 7, 9];
+const k = 7;
+const result = leftRotate(arr, k);
 console.log(result);
