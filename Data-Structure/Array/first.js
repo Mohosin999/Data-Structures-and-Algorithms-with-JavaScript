@@ -87,16 +87,24 @@
  * Output :
  * 9 1 3 5 7
  */
-function leftRotate(arr, k) {
-  const mod = k % arr.length;
-  for (let i = 0; i < k; i++) {
-    const store = arr.shift(i);
-    arr.push(store);
-  }
+function leftRotate(arr, d) {
+  const n = arr.length;
+  d = d % n; // if d is greater than n, we only need to rotate d%n times.
+  reverseArray(arr, 0, d - 1);
+  reverseArray(arr, d, n - 1);
+  reverseArray(arr, 0, n - 1);
   return arr;
 }
 
+function reverseArray(arr, start, end) {
+  while (start < end) {
+    [arr[start], arr[end]] = [arr[end], arr[start]];
+    start++;
+    end--;
+  }
+}
+
 const arr = [1, 3, 5, 7, 9];
-const k = 7;
-const result = leftRotate(arr, k);
+const d = 1;
+const result = leftRotate(arr, d);
 console.log(result);
