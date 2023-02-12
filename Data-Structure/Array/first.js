@@ -113,21 +113,40 @@
  * Problem - 05
  * Sort an array in wave form
  */
-function waveArr(arr) {
-  arr.sort((a, b) => a - b);
+// function waveArr(arr) {
+//   arr.sort((a, b) => a - b);
 
-  for (let i = 0; i < arr.length; i += 2) {
-    if (arr[i] < arr[i + 1]) {
-      let temp = arr[i];
-      arr[i] = arr[i + 1];
-      arr[i + 1] = temp;
+//   for (let i = 0; i < arr.length; i += 2) {
+//     if (arr[i] < arr[i + 1]) {
+//       let temp = arr[i];
+//       arr[i] = arr[i + 1];
+//       arr[i + 1] = temp;
+//     }
+//   }
+//   return arr;
+// }
+
+// let array = [10, 90, 49, 2, 1, 5, 23];
+// const result = waveArr(array);
+// console.log(result);
+
+/**
+ * Problem - 05
+ * Sort an array which contain 1 to n values
+ */
+function mySort(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = 0; j < arr.length - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
     }
   }
   return arr;
 }
 
-let array = [10, 90, 49, 2, 1, 5, 23];
-const result = waveArr(array);
+const arr = [10, 7, 9, 2, 8, 3, 5, 4, 6, 1];
+const result = mySort(arr);
 console.log(result);
-
-// Sort an array which contain 1 to n values
