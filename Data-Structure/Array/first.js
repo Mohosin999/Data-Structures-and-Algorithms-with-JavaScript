@@ -87,24 +87,47 @@
  * Output :
  * 9 1 3 5 7
  */
-function leftRotate(arr, d) {
-  const n = arr.length;
-  d = d % n; // if d is greater than n, we only need to rotate d%n times.
-  reverseArray(arr, 0, d - 1);
-  reverseArray(arr, d, n - 1);
-  reverseArray(arr, 0, n - 1);
+// function leftRotate(arr, d) {
+//   const n = arr.length;
+//   d = d % n; // if d is greater than n, we only need to rotate d%n times.
+//   reverseArray(arr, 0, d - 1);
+//   reverseArray(arr, d, n - 1);
+//   reverseArray(arr, 0, n - 1);
+//   return arr;
+// }
+
+// function reverseArray(arr, start, end) {
+//   while (start < end) {
+//     [arr[start], arr[end]] = [arr[end], arr[start]];
+//     start++;
+//     end--;
+//   }
+// }
+
+// const arr = [1, 3, 5, 7, 9];
+// const d = 1;
+// const result = leftRotate(arr, d);
+// console.log(result);
+
+/**
+ * Problem - 05
+ * Sort an array in wave form
+ */
+function waveArr(arr) {
+  arr.sort((a, b) => a - b);
+
+  for (let i = 0; i < arr.length; i += 2) {
+    if (arr[i] < arr[i + 1]) {
+      let temp = arr[i];
+      arr[i] = arr[i + 1];
+      arr[i + 1] = temp;
+    }
+  }
   return arr;
 }
 
-function reverseArray(arr, start, end) {
-  while (start < end) {
-    [arr[start], arr[end]] = [arr[end], arr[start]];
-    start++;
-    end--;
-  }
-}
-
-const arr = [1, 3, 5, 7, 9];
-const d = 1;
-const result = leftRotate(arr, d);
+let array = [10, 90, 49, 2, 1, 5, 23];
+const result = waveArr(array);
 console.log(result);
+
+// Sort an array which contain 1 to n values
