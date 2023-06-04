@@ -1,4 +1,6 @@
-// ps: 01
+/*====================================
+        Problem Solving - 01
+====================================*/
 function makeLatinSquare(n) {
   // Create an empty n x n matrix
   const square = Array.from({ length: n }, () => []);
@@ -42,3 +44,7 @@ const makeLatinSquare1 = (n) => {
 //  [5, 6, 7, 1, 2, 3, 4],
 //  [6, 7, 1, 2, 3, 4, 5],
 //  [7, 1, 2, 3, 4, 5, 6]]
+
+/*====================================
+        Problem Solving - 02
+====================================*/
