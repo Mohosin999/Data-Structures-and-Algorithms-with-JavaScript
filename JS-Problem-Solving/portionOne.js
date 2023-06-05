@@ -48,3 +48,6 @@ const makeLatinSquare1 = (n) => {
 /*====================================
         Problem Solving - 02
 ====================================*/
+function getLength(a) {
+  return a.length;
+}
