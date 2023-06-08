@@ -47,4 +47,22 @@ const makeLatinSquare1 = (n) => {
 
 /*====================================
         Problem Solving - 02
+
+Examples:
+secondSymbol('Hello world!!!','l')  --> 3
+secondSymbol('Hello world!!!', 'A') --> -1
+
 ====================================*/
+function secondSymbol(s, symbol) {
+  const string = s;
+  let occurenceCount = 0;
+
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === symbol) {
+      occurenceCount++;
+      if (occurenceCount === 2) {
+        return i;
+      }
+    }
+  }
+}
