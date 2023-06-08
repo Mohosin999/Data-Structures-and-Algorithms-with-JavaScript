@@ -54,22 +54,22 @@ secondSymbol('Hello world!!!', 'A') --> -1
 
 ====================================*/
 function secondSymbol(s, symbol) {
-  const string = s.toLowerCase();
-  const symbolLowerCase = symbol.toLowerCase();
-  let occurenceCount = 0;
+  const fIndex = s.indexOf(symbol);
 
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] === symbol) {
-      occurenceCount++;
-      if (occurenceCount === 2) {
-        return i;
-      } else {
-        return -1;
-      }
-    }
+  if (fIndex === -1) {
+    return -1;
   }
 
-  return -1;
+  // indexOf(indexValue)
+  // indexOf(indexValue, fromWhereStartAgain)
+
+  const sIndex = s.indexOf(symbol, fIndex + 1);
+
+  if (sIndex === -1) {
+    return -1;
+  }
+
+  return sIndex;
 }
 
 console.log(secondSymbol("Mongol", "o"));
