@@ -66,3 +66,5 @@ function secondSymbol(s, symbol) {
     }
   }
 }
+
+console.log(secondSymbol("Mohosin", "m"));
