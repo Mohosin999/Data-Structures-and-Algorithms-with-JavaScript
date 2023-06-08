@@ -66,8 +66,10 @@ function secondSymbol(s, symbol) {
       } else {
         return -1;
       }
+    } else {
+      return -1;
     }
   }
 }
 
-console.log(secondSymbol("Mohosin", "m"));
+console.log(secondSymbol("Mongol", "o"));
