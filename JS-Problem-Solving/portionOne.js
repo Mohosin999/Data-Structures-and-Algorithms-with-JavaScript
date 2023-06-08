@@ -47,11 +47,6 @@ const makeLatinSquare1 = (n) => {
 
 /*====================================
         Problem Solving - 02
-
-Examples:
-secondSymbol('Hello world!!!','l')  --> 3
-secondSymbol('Hello world!!!', 'A') --> -1
-
 ====================================*/
 function secondSymbol(s, symbol) {
   const fIndex = s.indexOf(symbol);
