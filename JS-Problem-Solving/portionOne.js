@@ -66,10 +66,10 @@ function secondSymbol(s, symbol) {
       } else {
         return -1;
       }
-    } else {
-      return -1;
     }
   }
+
+  return -1;
 }
 
 console.log(secondSymbol("Mongol", "o"));
