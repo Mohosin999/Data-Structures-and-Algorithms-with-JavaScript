@@ -54,7 +54,8 @@ secondSymbol('Hello world!!!', 'A') --> -1
 
 ====================================*/
 function secondSymbol(s, symbol) {
-  const string = s;
+  const string = s.toLowerCase();
+  const symbolLowerCase = symbol.toLowerCase();
   let occurenceCount = 0;
 
   for (let i = 0; i < string.length; i++) {
@@ -62,6 +63,8 @@ function secondSymbol(s, symbol) {
       occurenceCount++;
       if (occurenceCount === 2) {
         return i;
+      } else {
+        return -1;
       }
     }
   }
