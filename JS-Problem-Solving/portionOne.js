@@ -24,29 +24,10 @@ const makeLatinSquare1 = (n) => {
       square[i][j] = ((i + j) % n) + 1;
     }
   }
-
-  return square;
 };
 
-// console.log(generateLatinSquare(4));
-// Output:
-// [[1, 2, 3, 4],
-//  [2, 3, 4, 1],
-//  [3, 4, 1, 2],
-//  [4, 1, 2, 3]]
-
-// console.log(generateLatinSquare(7));
-// Output:
-// [[1, 2, 3, 4, 5, 6, 7],
-//  [2, 3, 4, 5, 6, 7, 1],
-//  [3, 4, 5, 6, 7, 1, 2],
-//  [4, 5, 6, 7, 1, 2, 3],
-//  [5, 6, 7, 1, 2, 3, 4],
-//  [6, 7, 1, 2, 3, 4, 5],
-//  [7, 1, 2, 3, 4, 5, 6]]
-
 /*====================================
-        Problem Solving - 02
+        Problem Solving - 01
 ====================================*/
 function secondSymbol(s, symbol) {
   const fIndex = s.indexOf(symbol);
