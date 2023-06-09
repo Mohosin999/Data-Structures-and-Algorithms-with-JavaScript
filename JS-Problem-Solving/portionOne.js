@@ -4,13 +4,6 @@
 function makeLatinSquare(n) {
   // Create an empty n x n matrix
   const square = Array.from({ length: n }, () => []);
-
-  // Fill the matrix with the numbers 1 to n
-  for (let i = 0; i < n; i++) {
-    for (let j = 0; j < n; j++) {
-      square[i][j] = ((i + j) % n) + 1;
-    }
-  }
 }
 
 // another solution 01
