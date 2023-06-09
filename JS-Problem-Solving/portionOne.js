@@ -3,7 +3,6 @@
 ====================================*/
 function makeLatinSquare(n) {
   // Create an empty n x n matrix
-  const square = Array.from({ length: n }, () => []);
 }
 
 // another solution 01
