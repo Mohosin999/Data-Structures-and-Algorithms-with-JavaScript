@@ -1,10 +1,3 @@
-/*====================================
-        Problem Solving - 01
-====================================*/
-function makeLatinSquare(n) {
-  // Create an empty n x n matrix
-}
-
 // another solution 01
 const makeLatinSquare1 = (n) => {
   let square = new Array(n).fill(0).map(() => new Array(n).fill(0));
