@@ -1,5 +1,5 @@
 /**
- * Question 01 : sum of all natural numbers from 1 to n.
+ * Question 01 : Sum of all natural numbers from 1 to n.
  *
  * sum of 1 to 5: 15
  */
@@ -8,7 +8,7 @@
 function sumOfNaturalNumber(num) {
   let sum = 0;
   for (let i = 1; i <= num; i++) {
-    // If I use "i = 0", the result will same.
+    // here "i" is a loop variable, not index. So "i = 1" means "i" value is 1.
     sum += i;
   }
   return sum;
@@ -22,3 +22,15 @@ function sumOfNaturalNumber2(num) {
 }
 
 console.log(sumOfNaturalNumber2(10)); // 55 ( awesome )
+
+/**
+ * Question 02 : Sum of digits of a number.
+ *
+ * 1287: 1+2+8+7 = 18
+ *
+ */
+function sumOfDigits(num) {
+  let sum = 0;
+  // Do later
+  return sum;
+}
