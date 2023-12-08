@@ -69,4 +69,12 @@ function countDigits(num) {
   return count;
 }
 
-console.log(countDigits(34252));
+console.log(countDigits(34252)); // 5
+
+// Another way
+function countNumDigits(num) {
+  const numStr = Math.abs(num).toString();
+  return numStr.length;
+}
+
+console.log(countNumDigits(34252)); // 5
