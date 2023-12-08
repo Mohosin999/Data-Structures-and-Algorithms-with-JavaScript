@@ -31,6 +31,11 @@ console.log(sumOfNaturalNumber2(10)); // 55 ( awesome )
  */
 function sumOfDigits(num) {
   let sum = 0;
-  // Do later
+  while (num > 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
+  }
   return sum;
 }
+
+console.log(sumOfDigits(1287));
