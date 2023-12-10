@@ -4,6 +4,7 @@
  * Question 01 : Sum of all natural numbers from 1 to n.
  * Question 02 : Sum of digits of a number.
  * Question 03 : Count the number of digits of a number.
+ * Question 04 : Palindrome Number ( Problem Solve ).
  */
 
 /**
@@ -78,3 +79,33 @@ function countNumDigits(num) {
 }
 
 console.log(countNumDigits(34252)); // 5
+
+/**
+ * Question 04 : Palindrome Number ( Problem Solve ).
+ *
+ * Given an integer x, return true if x is a palindrome and false otherwise.
+ * What is a palindrome? = 121 is a palindrome ( 121 and 121 ) but 122 is not ( 122 and 221 ).
+ *
+ * Process:
+ * 123%10 = 3 and the number will be 12.
+ * 0*10 + lastNum = 0+3 = 3
+ *
+ * Again, 12%10 = 2 and the number will be 1.2 ( 1 because of Math.floor())
+ * 3*10 + lastNum = 30+2 = 32
+ *
+ * Continue...
+ */
+function isPalindrome(x) {
+  let copyNum = x,
+    reverseNum = 0;
+
+  while (copyNum > 0) {
+    const lastDigit = copyNum % 10;
+    reverseNum = reverseNum * 10 + lastDigit;
+    copyNum = Math.floor(copyNum / 10);
+  }
+  return x === reverseNum;
+}
+
+console.log(isPalindrome(121)); // true ( because 121 )
+console.log(isPalindrome(123)); // false ( because 321 )
