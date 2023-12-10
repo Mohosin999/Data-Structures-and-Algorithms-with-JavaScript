@@ -5,7 +5,7 @@
  * Question 02 : Sum of digits of a number.
  * Question 03 : Count the number of digits of a number.
  * Problem Solve 01 : Palindrome Number.
- * Problem Solve 02 : Fibonacci Numbers.
+ * Problem Solve 02 : Fibonacci Numbers ( start with 0 and 1 ).
  */
 
 /**
@@ -112,7 +112,7 @@ console.log(isPalindrome(121)); // true ( because 121 )
 console.log(isPalindrome(123)); // false ( because 321 )
 
 /**
- * Problem Solve 02 : Fibonacci Numbers.
+ * Problem Solve 02 : Fibonacci Numbers ( start with 0 and 1 ).
  *
  * What is a Fibonacci Numbers? = 0 1 1 2 3 5 8
  * 0 1 = 0+1 = 0 1 1
@@ -142,3 +142,6 @@ function fibonacciNum(n) {
 
   return next;
 }
+
+console.log(fibonacciNum(2)); // 1
+console.log(fibonacciNum(6)); // 8 ( because 0 1 1 2 3 5 8 )
