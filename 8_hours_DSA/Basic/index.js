@@ -4,7 +4,8 @@
  * Question 01 : Sum of all natural numbers from 1 to n.
  * Question 02 : Sum of digits of a number.
  * Question 03 : Count the number of digits of a number.
- * Question 04 : Palindrome Number ( Problem Solve ).
+ * Problem Solve 01 : Palindrome Number.
+ * Problem Solve 02 : Fibonacci Numbers.
  */
 
 /**
@@ -81,7 +82,7 @@ function countNumDigits(num) {
 console.log(countNumDigits(34252)); // 5
 
 /**
- * Question 04 : Palindrome Number ( Problem Solve ).
+ * Problem Solve 01 : Palindrome Number.
  *
  * Given an integer x, return true if x is a palindrome and false otherwise.
  * What is a palindrome? = 121 is a palindrome ( 121 and 121 ) but 122 is not ( 122 and 221 ).
@@ -109,3 +110,35 @@ function isPalindrome(x) {
 
 console.log(isPalindrome(121)); // true ( because 121 )
 console.log(isPalindrome(123)); // false ( because 321 )
+
+/**
+ * Problem Solve 02 : Fibonacci Numbers.
+ *
+ * What is a Fibonacci Numbers? = 0 1 1 2 3 5 8
+ * 0 1 = 0+1 = 0 1 1
+ * 0 1 1 = 1+1 = 2
+ * 0 1 1 2 = 1+2 = 3
+ * 0 1 1 2 3 = 2+3 = 5
+ * 0 1 1 2 3 5
+ * Continue... ( sum the last two numbers )
+ *
+ * F(2) = the number will be 1 ( because 0 1 1 )
+ * F(5) = the number will be 5 ( because 0 1 1 2 3 5 )
+ */
+function fibonacciNum(n) {
+  if (n < 2) {
+    return n;
+  }
+
+  let prev = 0,
+    curr = 1,
+    next;
+
+  for (let i = 2; i <= n; i++) {
+    next = prev + curr;
+    prev = curr;
+    curr = next;
+  }
+
+  return next;
+}
