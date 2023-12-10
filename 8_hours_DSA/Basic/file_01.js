@@ -6,6 +6,7 @@
  * Question 03 : Count the number of digits of a number.
  * Problem Solve 01 : Palindrome Number.
  * Problem Solve 02 : Fibonacci Numbers ( start with 0 and 1 ).
+ * Problem Solve 03 : Return Missing Number from the Array.
  */
 
 /**
@@ -145,3 +146,29 @@ function fibonacciNum(n) {
 
 console.log(fibonacciNum(2)); // 1
 console.log(fibonacciNum(6)); // 8 ( because 0 1 1 2 3 5 8 )
+
+/**
+ * Problem Solve 03 : Return Missing Number from the Array.
+ *
+ * Arr = [3, 0, 1] ( since arr length 3 numbers, so n = 3 )
+ * Result = 2
+ *
+ * Arr = [0, 1] ( since arr length 2 numbers, so n = 2 )
+ * Result = 2 ( 0, 1, 2 )
+ *
+ * How do it?
+ * 1. sum all the numbers from the array. ( 3 + 0 + 1 = 4 )
+ * 2. as n = 3, so sum the numbers till 3 ( 0 + 1 + 2 + 3 = 6 )
+ * 3. 6 - 4 = 2
+ */
+function missingNum(nums) {
+  let sum = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    sum += nums[i];
+  }
+
+  return (nums.length * (nums.length + 1)) / 2 - sum;
+}
+
+console.log(missingNum([3, 0, 1])); // 2
