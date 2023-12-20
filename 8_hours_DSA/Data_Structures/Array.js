@@ -6,7 +6,11 @@
  * Question 03: How to Delete, Add and Update element specific index? // using Splice()
  * Shallow copy of Array.
  * Deep copy of Array.
- *
+ * How to add two array?
+ * Question 04: How can you check if two array are equal?
+ * Question 05: How to sort an array in ascending and descending order?
+ * Question 06: How to reverse an array?
+ * Flat
  */
 
 // How do you access the first and last elements of an array?
@@ -110,3 +114,54 @@ const arrE = arr.concat(); // process 03
 arrC.push(7);
 console.log(arrC, arr);
 console.log(arrE);
+
+/**
+ * How to add two array?
+ */
+const newArr = [...arr, ...arrE]; // process 01
+const newArr1 = arr.concat(arrE); // process 02
+
+console.log(newArr, newArr1);
+
+/**
+ * Question 04: How can you check if two array are equal?
+ */
+function isEqual(arr1, arr2) {
+  // process 01
+  // if (arr1.length !== arr2.length) {
+  //   return false;
+  // }
+
+  // for (let i = 0; i < arr1.length; i++) {
+  //   if (arr1[i] !== arr2[i]) {
+  //     return false;
+  //   }
+  // }
+  // return true;
+
+  // process 02
+  return (
+    arr1.length === arr2.length &&
+    arr1.every((_element, index) => arr1[index] === arr2[index])
+  );
+}
+
+console.log(isEqual([1, 2, 3], [1, 2, 3])); // true
+
+/**
+ * Question 05: How to sort an array in ascending and  order?
+ */
+const x = [3, 1, 5, 2, 4, 0];
+x.sort(); // ascending
+x.sort((a, b) => b - a); // descending
+console.log(x);
+
+/**
+ * Question 06: How to reverse an array?
+ */
+x.reverse();
+console.log(x);
+
+/**
+ * Flat
+ */
