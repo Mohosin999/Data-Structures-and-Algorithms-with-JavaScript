@@ -4,6 +4,8 @@
  * Question 01: How do you check if an element exists in an array?
  * Question 02: How do you check if an element exists in an array? If exist return it's index.
  * Question 03: How to Delete, Add and Update element specific index? // using Splice()
+ * Shallow copy of Array.
+ * Deep copy of Array.
  *
  */
 
@@ -85,3 +87,26 @@ arr1.splice(2, 1);
 arr1.splice(2, 0, "akash");
 // update
 arr1.splice(2, 1, "Mohosin Hasan Akash");
+
+/**
+ * Shallow copy of Array.
+ * In shallow copy, if I change arrB, arr will also be changed.
+ * arrB & arr indicates -> same memory location and same reference.
+ */
+const arrB = arr;
+
+arrB.push("akash");
+console.log(arrB, arr);
+console.log(arrB === arr); // true
+
+/**
+ * Deep copy of Array.
+ * In deep copy, if I change arrC, arr will not be changed.
+ */
+const arrC = [...arr]; // process 01
+const arrD = Array.from(arr); // process 02
+const arrE = arr.concat(); // process 03
+
+arrC.push(7);
+console.log(arrC, arr);
+console.log(arrE);
