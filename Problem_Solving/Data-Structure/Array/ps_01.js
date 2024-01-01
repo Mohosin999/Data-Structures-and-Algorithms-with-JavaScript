@@ -45,7 +45,7 @@ function minmaxNum1(arr, n) {
 }
 
 const arr1 = [1, 4, 2, 3, 7, 5];
-const result = minmaxNum1(arr1, arr1.length - 1);
+const result = minmaxNum1(arr1, arr1.length);
 console.log(result);
 
 // process 02
