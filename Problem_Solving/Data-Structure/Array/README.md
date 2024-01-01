@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [Reverse the Array](#-reverse-the-array)
-- [Minmax in Array](#-minmax-in-array)
+- [Write a program to reverse the array](#-write-a-program-to-reverse-the-array)
+- [Find minimum and maximum element in an array](#-find-minimum-and-maximum-element-in-an-array)
 
 ### 01: Write a program to reverse the array
 
@@ -13,7 +13,7 @@ function reverseArray(arr) {
   let end = arr.length - 1;
 
   while (start < end) {
-    // Swap elements at start and end indices
+    <!-- Swap elements at start and end indices -->
     let temp = arr[start];
     arr[start] = arr[end];
     arr[end] = temp;
