@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Reverse the Array](#-reverse-the-array)
+- [Minmax in Array](#-minmax-in-array)
 
 ### 01: Write a program to reverse the array
 
