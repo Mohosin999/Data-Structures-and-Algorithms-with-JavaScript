@@ -1,10 +1,4 @@
-# Array ( Data Structure )
-
-## Table of Contents
-
-- [01. Write a program to reverse the array](#01-write-a-program-to-reverse-the-array)
-- [02. Find minimum and maximum element in an array](#02-find-minimum-and-maximum-element-in-an-array)
-- [03. Sort The Array](#03-sort-the-array)
+# Array - Basic & Easy Problems
 
 ### 01. Write a program to reverse the array
 
