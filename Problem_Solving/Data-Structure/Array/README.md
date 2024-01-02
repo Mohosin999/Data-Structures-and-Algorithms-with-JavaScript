@@ -4,7 +4,7 @@
 
 - [01. Write a program to reverse the array](#01-write-a-program-to-reverse-the-array)
 - [02. Find minimum and maximum element in an array](#02-find-minimum-and-maximum-element-in-an-array)
-- [Peak Element](#3️⃣-peak-element)
+- [Peak Element](#03-peak-element)
 
 ### 01. Write a program to reverse the array
 
@@ -81,7 +81,7 @@ const result2 = minmaxNum2(arr2);
 console.log(result2);
 ```
 
-### 3️⃣ grrr
+### 03. Peak Element
 
 ```
 
