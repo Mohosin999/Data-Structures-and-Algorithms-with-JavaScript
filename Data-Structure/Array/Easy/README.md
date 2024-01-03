@@ -2,7 +2,7 @@
 
 ### 01. Write a program to reverse the array
 
-```javascript
+```
 function reverseArray(arr) {
   let start = 0;
   let end = arr.length - 1;
@@ -30,7 +30,7 @@ console.log(originalArray);
 
 #### `Process 01`
 
-```javascript
+```
 function minmaxNum1(arr, n) {
   if (n === 0) {
     return { min: undefined, max: undefined };
@@ -59,7 +59,7 @@ console.log(result);
 
 #### `Process 02`
 
-```javascript
+```
 function minmaxNum2(arr) {
   const minmax = {};
 
@@ -77,7 +77,7 @@ console.log(result2);
 
 ### 03. Sort The Array
 
-```javascript
+```
 function sortArr(arr) {
   arr.sort((a, b) => a - b);
 
