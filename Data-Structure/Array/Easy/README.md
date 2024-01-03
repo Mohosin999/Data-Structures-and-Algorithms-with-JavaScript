@@ -90,10 +90,23 @@ console.log(sortArr(arr));
 
 ```
 
-### 03. Sort The Array
+### 03. How do you check if an element exists in an array?
 
-```
+```javascript
+function findElement(arr, target) {
+  for (let x of arr) {
+    if (x === target) {
+      return true;
+    }
+  }
 
+  return false;
+}
+
+const arr = ["akash", "nayem", 2, 5, "rasel"];
+
+console.log(findElement(arr, "akash"));
+console.log(arr.includes(5));
 ```
 
 ### 03. Sort The Array

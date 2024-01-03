@@ -1,9 +1,14 @@
-function sortArr(arr) {
-  arr.sort((a, b) => a - b);
+function findElement(arr, target) {
+  for (let x of arr) {
+    if (x === target) {
+      return true;
+    }
+  }
 
-  // Return the sorted array
-  return arr;
+  return false;
 }
 
-const arr = [3, 5, 2, 1, 4];
-console.log(sortArr(arr));
+const arr = ["akash", "nayem", 2, 5, "rasel"];
+
+console.log(findElement(arr, "akash"));
+console.log(arr.includes(5));
