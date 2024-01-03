@@ -87,7 +87,6 @@ function sortArr(arr) {
 
 const arr = [3, 5, 2, 1, 4];
 console.log(sortArr(arr));
-
 ```
 
 ### 03. How do you check if an element exists in an array?
@@ -111,6 +110,18 @@ console.log(arr.includes(5));
 
 ### 03. Sort The Array
 
+```javascript
+
 ```
+
+### 03. Sort The Array
+
+```javascript
+
+```
+
+### 03. Sort The Array
+
+```javascript
 
 ```
