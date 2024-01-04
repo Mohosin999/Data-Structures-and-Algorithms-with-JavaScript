@@ -108,10 +108,10 @@ console.log(findElement(arr, "akash"));
 console.log(arr.includes(5));
 ```
 
-### 03. Sort The Array
+### 03. How do you find the index of an element in an array?
 
 ```javascript
-
+const arr = ["akash", "nayem", "jabir", "babu", "ashik", "rasel"];
 ```
 
 ### 03. Sort The Array
