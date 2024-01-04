@@ -140,7 +140,19 @@ arr.splice(1, 3, 6, 7, 8);
 console.log(arr);
 ```
 
-### 03. Sort The Array
+### 07. Sort The Array
+
+```javascript
+
+```
+
+### 08. Sort The Array
+
+```javascript
+
+```
+
+### 09. Sort The Array
 
 ```javascript
 
