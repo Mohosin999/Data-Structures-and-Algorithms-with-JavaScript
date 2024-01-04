@@ -1,9 +1,6 @@
 const arr = ["akash", "nayem", "jabir", "babu", "ashik", "rasel"];
+const arr2 = [3, 4, 5];
 
-console.log(arr);
-arr.splice(1, 3);
-console.log(arr);
-arr.splice(1, 0, 2, 3, 4, 5, 6);
-console.log(arr);
-arr.splice(1, 3, 6, 7, 8);
-console.log(arr);
+const arrx = arr.concat(arr2);
+
+console.log(arrx);
