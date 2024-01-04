@@ -1,14 +1,9 @@
-function findElement(arr, target) {
-  for (let x of arr) {
-    if (x === target) {
-      return true;
-    }
-  }
+const arr = ["akash", "nayem", "jabir", "babu", "ashik", "rasel"];
 
-  return false;
-}
-
-const arr = ["akash", "nayem", 2, 5, "rasel"];
-
-console.log(findElement(arr, "akash"));
-console.log(arr.includes(5));
+console.log(arr);
+arr.splice(1, 3);
+console.log(arr);
+arr.splice(1, 0, 2, 3, 4, 5, 6);
+console.log(arr);
+arr.splice(1, 3, 6, 7, 8);
+console.log(arr);

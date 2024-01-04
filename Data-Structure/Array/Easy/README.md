@@ -89,7 +89,7 @@ const arr = [3, 5, 2, 1, 4];
 console.log(sortArr(arr));
 ```
 
-### 03. How do you check if an element exists in an array?
+### 04. How do you check if an element exists in an array?
 
 ```javascript
 function findElement(arr, target) {
@@ -108,7 +108,7 @@ console.log(findElement(arr, "akash"));
 console.log(arr.includes(5));
 ```
 
-### 03. How do you find the index of an element in an array?
+### 05. How do you find the index of an element in an array?
 
 ```javascript
 function findIndex(arr, target) {
@@ -126,7 +126,7 @@ console.log(findIndex(arr, "nayem"));
 console.log(arr.indexOf("babu"));
 ```
 
-### 03. Sort The Array
+### 06. How to delete, add & update elements from a specific index?
 
 ```javascript
 
