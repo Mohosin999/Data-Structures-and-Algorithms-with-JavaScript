@@ -173,13 +173,28 @@ const arr2 = ["akash", "nayem", "jabir", "babu", "ashik", "rasel"];
 console.log(isEqual(arr1, arr2));
 ```
 
-### 08. Sort The Array
+### 08. How to sort an array in ascending and descending order?
+
+```javascript
+const x = [1, 4, 6, 0, -9, -5];
+
+console.log(x.sort());
+console.log(x.sort((a, b) => b - a));
+```
+
+### 09.
 
 ```javascript
 
 ```
 
-### 09. Sort The Array
+### 10.
+
+```javascript
+
+```
+
+### 11.
 
 ```javascript
 
