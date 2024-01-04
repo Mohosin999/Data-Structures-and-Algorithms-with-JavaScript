@@ -111,7 +111,19 @@ console.log(arr.includes(5));
 ### 03. How do you find the index of an element in an array?
 
 ```javascript
+function findIndex(arr, target) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === target) {
+      return i;
+    }
+  }
+
+  return -1;
+}
+
 const arr = ["akash", "nayem", "jabir", "babu", "ashik", "rasel"];
+console.log(findIndex(arr, "nayem"));
+console.log(arr.indexOf("babu"));
 ```
 
 ### 03. Sort The Array
