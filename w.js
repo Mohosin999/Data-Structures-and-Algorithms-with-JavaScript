@@ -14,12 +14,17 @@
 
 // console.log(twoSum(nums, 11));
 
-const nums = ["Mohosin ", "Hasan ", "Khan ", "Sheikh ", "Akash "];
+const nums = [
+  [1, 2, 3],
+  [4, 5, 6],
+  ["akash", "yasin", "ashik"],
+  [null, "", undefined],
+];
 
 function twoSum(nums) {
   for (let i = 0; i < nums.length; i++) {
     for (let j = i + 1; j < nums.length; j++) {
-      console.log(nums[i] + nums[j]);
+      console.log(nums[j]
     }
   }
   // If no solution is found
