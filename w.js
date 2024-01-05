@@ -14,7 +14,7 @@
 
 // console.log(twoSum(nums, 11));
 
-const nums = [3, 2, 4, 9];
+const nums = ["Mohosin", "Hasan", "Islam", "Sheikh", "Akash"];
 
 function twoSum(nums, target) {
   for (let i = 0; i < nums.length; i++) {
