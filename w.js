@@ -18,3 +18,5 @@ const namedArr = [
   ["AAA", "BBB", "CCC"],
   ["111", "222", "333"],
 ];
+
+const getElement = (arr) => {};
