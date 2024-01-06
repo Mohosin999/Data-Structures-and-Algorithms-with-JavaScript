@@ -19,4 +19,6 @@ const namedArr = [
   ["111", "222", "333"],
 ];
 
-const getElement = (arr) => {};
+const getElement = (arr) => {
+  for (let i = 0; i < arr.length; i++) {}
+};
