@@ -22,9 +22,13 @@ const namedArr = [
 const getElement = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
-      console.log(arr[i].length);
+      if (arr[i][j] === "CCC") {
+        console.log("Index of the element is -> ", i, j);
+        return;
+      }
     }
   }
+  console.log("Element not found!");
 };
 
 getElement(namedArr);
