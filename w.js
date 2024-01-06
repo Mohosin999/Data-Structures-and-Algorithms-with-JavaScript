@@ -12,3 +12,9 @@ function twoSum(nums, target) {
 
 const nums = [3, 2, 4, 9];
 console.log(twoSum(nums, 11));
+
+const namedArr = [
+  ["aaa", "bbb", "ccc"],
+  ["AAA", "BBB", "CCC"],
+  ["111", "222", "333"],
+];
