@@ -37,5 +37,6 @@ getElement(namedArr);
 const listNum = [];
 listNum.push("Akash");
 listNum.push("Nayem");
+listNum.push("Nazmul");
 
 console.log(listNum);
