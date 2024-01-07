@@ -34,3 +34,4 @@ const getElement = (arr) => {
 getElement(namedArr);
 
 // Define an array
+const listNum = [];
