@@ -35,3 +35,5 @@ getElement(namedArr);
 
 // Define an array
 const listNum = [];
+
+console.log(listNum);
