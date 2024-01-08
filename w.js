@@ -36,4 +36,3 @@ getElement(namedArr);
 // Define an array
 const listNum = [];
 listNum.push("Akash");
-listNum.push("Nayem");
