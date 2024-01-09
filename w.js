@@ -24,4 +24,3 @@ const getElement = (arr) => {
     for (let j = 0; j < arr[i].length; j++) {
       if (arr[i][j] === "CCC") {
         console.log("Index of the element is -> ", i, j);
-        return;
