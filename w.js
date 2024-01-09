@@ -34,4 +34,5 @@ const getElement = (arr) => {
   console.log("Element not found!");
   console.log("Element not found!");
   console.log("Element not found!");
+  console.log("Element not found!");
 };
