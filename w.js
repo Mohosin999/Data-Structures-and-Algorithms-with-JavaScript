@@ -26,4 +26,3 @@ const getElement = (arr) => {
         console.log("Index of the element is -> ", i, j);
         return;
       }
-    }
