@@ -201,13 +201,25 @@ const nums = [3, 2, 4, 9];
 console.log(twoSum(nums, 11));
 ```
 
-### 10.
+### 10. Majority Element
 
 ```javascript
 
 ```
 
 ### 11.
+
+```javascript
+
+```
+
+### 12.
+
+```javascript
+
+```
+
+### 13.
 
 ```javascript
 
