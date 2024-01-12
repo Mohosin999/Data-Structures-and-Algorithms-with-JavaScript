@@ -182,7 +182,7 @@ console.log(x.sort());
 console.log(x.sort((a, b) => b - a));
 ```
 
-### 09.
+### 09. Two Sum
 
 ```javascript
 function twoSum(nums, target) {
